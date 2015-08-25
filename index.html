@@ -8,14 +8,28 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
+    <div class="container" style="background-image: url('images/questionMark.jpg');">
       <header class="page-header">
         <h1>Guessing Game!</h1>
       </header>
 
       <div class="jumbotron">
-        <h1>Guess a number between 1 and 100</h1>
+        <h3>Guess a number 1 to 100 inclusive</h3>
+
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="1-100" aria-describedby="basic-addon1">
+        </div>
+
+        <BR />
+
+        <div class="btn-group" role="group" aria-label="...">
+          <button type="button" class="btn btn-primary">Enter guess</button>
+          <button type="button" class="btn btn-warning">Give me a hint!</button>
+          <button type="button" class="btn btn-success">Play again</button>
+        </div>
       </div>
+
+      <h6>A game by Josh Schwartz Development Productions</h6>
 
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
